@@ -1,0 +1,55 @@
+
+<odoo>
+
+    <record id="view_prestamo_equipo_list" model="ir.ui.view">
+        <field name="name">prestamo.equipo.list</field>
+        <field name="model">prestamo.equipo</field>
+        <field name="arch" type="xml">
+            <list string="Equipos">
+                <field name="name"/>
+                <field name="codigo"/>
+                <field name="categoria"/>
+                <field name="estado"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_prestamo_equipo_form" model="ir.ui.view">
+        <field name="name">prestamo.equipo.form</field>
+        <field name="model">prestamo.equipo</field>
+        <field name="arch" type="xml">
+            <form string="Equipo">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="codigo"/>
+                        <field name="categoria"/>
+                        <field name="estado"/>
+                        <field name="active"/>
+                    </group>
+                    <group>
+                        <field name="notas"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_prestamo_equipo" model="ir.actions.act_window">
+        <field name="name">Equipos</field>
+        <field name="res_model">prestamo.equipo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_prestamos_root"
+              name="Prestamos"
+              sequence="10"/>
+
+    <menuitem id="menu_prestamo_equipo"
+              name="Equipos"
+              parent="menu_prestamos_root"
+              action="action_prestamo_equipo"
+              sequence="10"/>
+
+</odoo>
