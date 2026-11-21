@@ -1,0 +1,29 @@
+
+<odoo noupdate="1">
+
+    <record id="equipo_laptop_01" model="prestamo.equipo">
+        <field name="name">Laptop Dell 01</field>
+        <field name="codigo">LAP-001</field>
+        <field name="categoria">laptop</field>
+    </record>
+
+    <record id="equipo_laptop_02" model="prestamo.equipo">
+        <field name="name">Laptop Dell 02</field>
+        <field name="codigo">LAP-002</field>
+        <field name="categoria">laptop</field>
+    </record>
+
+    <record id="equipo_proyector_01" model="prestamo.equipo">
+        <field name="name">Proyector Epson 01</field>
+        <field name="codigo">PRO-001</field>
+        <field name="categoria">proyector</field>
+    </record>
+
+    <record id="equipo_bocina_01" model="prestamo.equipo">
+        <field name="name">Bocina portatil 01</field>
+        <field name="codigo">AUD-001</field>
+        <field name="categoria">audio</field>
+    </record>
+
+</odoo>
+
